@@ -1,1 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
+
+.source-list {
+  float: right;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
