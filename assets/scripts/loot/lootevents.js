@@ -3,16 +3,24 @@ const api = require('./lootapi')
 const ui = require('./lootui')
 const store = require('../store')
 
-let weapons = ['longsword', 'greatsword', 'greataxe']
+const weapons = [
+  'longsword',
+  'greataxe',
+  'dagger',
+  'greatsword',
+  'longbow'
+]
 
-const randomArray = function (array) {
-  const item = array[Math.floor(Math.random()*array.lenth)]
-  console.log(item)
-  return item
+const randomArray = function () {
+  const randomAnswer = weapons[Math.floor(Math.random() * weapons.length)]
+  console.log(randomAnswer)
 }
 
 const addHandlers = function () {
-  $('#generateItem').on('click', randomArray(weapons))
+  $('.generateItem').on('click', randomArray)
+  // $('#generateItem').on('click', function () {
+  //  console.log('TEST')
+  // })
 }
 
 module.exports = {

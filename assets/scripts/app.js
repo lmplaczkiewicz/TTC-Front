@@ -1,7 +1,7 @@
 'use strict'
 
-// const setAPIOrigin = require('../../lib/set-api-origin')
-// const config = require('./config')
+const setAPIOrigin = require('../../lib/set-api-origin')
+const config = require('./config')
 const lootevents = require('./loot/lootevents')
 
 // use require with a reference to bundle the file and use it in this file
