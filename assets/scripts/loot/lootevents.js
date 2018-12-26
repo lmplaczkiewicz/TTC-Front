@@ -14,6 +14,9 @@ const weapons = [
 const randomArray = function () {
   const randomAnswer = weapons[Math.floor(Math.random() * weapons.length)]
   console.log(randomAnswer)
+  event.preventDefault()
+  const formData = getFormFields(event.target)
+  ui.treasureGenerated()
 }
 
 const addHandlers = function () {

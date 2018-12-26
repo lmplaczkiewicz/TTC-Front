@@ -3,15 +3,19 @@
 .source-list {
   float: right;
   list-style-type: none;
+  width: 20%;
+}
+
+.treasureOutput {
+  text-align: center;
+  background-color: black;
 }
 
 li {
-  float: left;
-  width: 25%;
+  list-style-type: none;
 }
 
 .sourceInput {
-  padding: 5px;
 }
 
 .mainPageHeader {
